@@ -1,3 +1,5 @@
+This is the same as Daniele Bogo's DBCamera, except it does not end the AVCaptureSession after each photo.
+
 ![Alt text](http://bogodaniele.com/apps/development/dbcamera/github/dbcamera_splash.png)
 
 DBCamera is a simple custom camera with AVFoundation.
