@@ -242,11 +242,12 @@ typedef void (^TableRowBlock)();
 
 - (void) camera:(id)cameraViewController didFinishWithImage:(UIImage *)image withMetadata:(NSDictionary *)metadata
 {
+    NSLog(@"Image captured: %@", image);
     DetailViewController *detail = [[DetailViewController alloc] init];
     [detail setDetailImage:image];
-    [self.navigationController pushViewController:detail animated:NO];
+    //[self.navigationController pushViewController:detail animated:NO];
     [cameraViewController restoreFullScreenMode];
-    [self.presentedViewController dismissViewControllerAnimated:YES completion:nil];
+    //[self.presentedViewController dismissViewControllerAnimated:YES completion:nil];
 }
 
 @end
